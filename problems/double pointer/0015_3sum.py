@@ -25,38 +25,32 @@
 from typing import List
 class Solution:
     def threeSum(self, nums: List[int]) -> List[List[int]]:
-        # 排序
+        # SORT
         nums.sort()
+        # specail cases - trim
         n = len(nums)
-        # speical case - trim-减枝
-        if nums[0] >0 or nums[-1]<0 or len(nums)<3:
+        if n<3 or nums[0]>0 or nums[-1]<0:
             return []
-        # traverse + double pointers
+        # one tranverse + double pointers
         res = []
         for i in range(n-2):
+            l, r = i+1, n-1
             # trim
             if nums[i]>0:
-                return res    # return res, 不能是return []
+                break
             # remove repeat
             if i>0 and nums[i]==nums[i-1]:
                 continue
-            # left pointer
-            l = i+1
-            # right pointer
-            r = n-1
-            # move pointers
             while l<r:
                 s = nums[i] + nums[l] + nums[r]
                 if s==0:
                     res.append([nums[i], nums[l], nums[r]])
-                    # remove repeat -- 重复过程,并防止越界
-                    while l<r and nums[l+1] == nums[l]:
-                        l+=1
-                    while l<r and nums[r]==nums[r-1]:
-                        r-=1
-                    # continue to move
                     l+=1
                     r-=1
+                    while l<r and nums[l]==nums[l-1]:
+                        l+=1
+                    while l<r and nums[r]==nums[r+1]:
+                        r-=1
                 elif s<0:
                     l+=1
                 else:
@@ -64,8 +58,8 @@ class Solution:
         return res
     
 
-# # ls = [-2,0,3,-1,4,0,3,4,1,1,1,-3,-5,4,0]
-# ls =[0, 0, 0]
+# ls = [-2,0,3,-1,4,0,3,4,1,1,1,-3,-5,4,0]
+# ls =[-1,0,1,2,-1,-4]
 # s = Solution()
 # print(s.threeSum(ls))
 # # [[-5,1,4],[-5,1,4],[-3,-1,4],[-3,0,3],[-2,-1,3],[-2,1,1],[-1,0,1],[-1,0,1],[0,0,0]]
@@ -79,7 +73,8 @@ class Solution:
                     
             
 
-        
+# [-1, -1, 0, 1, 3, 4, 5, 6, 7, 8, 9]
+
         
 # @lc code=end
 
