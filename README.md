@@ -13,5 +13,8 @@
 - [0001 Two Sum](problems/hashtable(set)/0001_two_sum.py)
 - [0128 Longest Consecutive Sequence](problems/hashtable(set)/0128_longest_consecutive_sequence.py)
 
+## Simulation
+- [0415 Add-Strings](problems/simulation/0415_add-strings.py)
+
 ## Stack
 - [0020 Valid-Parentheses](problems/stack/0020_valid-parentheses.py)
