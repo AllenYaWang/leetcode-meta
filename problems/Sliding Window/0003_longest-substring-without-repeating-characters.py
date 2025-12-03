@@ -18,6 +18,7 @@
 
 另记：
 理解 while --> 是需要重复的if 语句。
+滑动窗口法 —— 特殊的双指针方法。
 '''
 class Solution:
     def lengthOfLongestSubstring(self, s: str) -> int:
