@@ -13,6 +13,7 @@
 - [0005 Longest-Palindromic-Substring](problems/dp/0005_longest-palindromic-substring.py)
 - [0053 Maximum-Subarray](problems/dp/0053_maximum-subarray.py)
 - [0070 Climbing-Stairs](problems/dp/0070_climbing-stairs.py)
+- [0198 House-Robber](problems/dp/0198_house-robber.py)
 
 ## Hashtable(Set)
 - [0001 Two Sum](problems/hashtable(set)/0001_two_sum.py)
