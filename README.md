@@ -5,6 +5,12 @@
 ## Sliding Window
 - [0003 Longest-Substring-Without-Repeating-Characters](problems/Sliding Window/0003_longest-substring-without-repeating-characters.py)
 
+## Backtracing
+- [0046 Permutations](problems/backtracing/0046_permutations.py)
+
+## Divideconquer
+- [0215 Kth-Largest-Element-In-An-Array](problems/divideConquer/0215_kth-largest-element-in-an-array.py)
+
 ## Double Pointer
 - [0015 3Sum](problems/double pointer/0015_3sum.py)
 - [0283 Move-Zeroes](problems/double pointer/0283_move-zeroes.py)
@@ -19,8 +25,14 @@
 - [0001 Two Sum](problems/hashtable(set)/0001_two_sum.py)
 - [0128 Longest Consecutive Sequence](problems/hashtable(set)/0128_longest_consecutive_sequence.py)
 
+## Math
+- [3591 Check-If-Any-Element-Has-Prime-Frequency](problems/math/3591_check-if-any-element-has-prime-frequency.py)
+
 ## Simulation
 - [0415 Add-Strings](problems/simulation/0415_add-strings.py)
+
+## Sort
+- [0215 Kth-Largest-Element-In-An-Array](problems/sort/0215_kth-largest-element-in-an-array.py)
 
 ## Stack
 - [0020 Valid-Parentheses](problems/stack/0020_valid-parentheses.py)
